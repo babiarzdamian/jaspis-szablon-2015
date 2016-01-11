@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--<style>
+	html {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	color: #232323;
+	font-size: 16px;
+	}
+	.container {
+	width: 1200px;
+	margin: 0 auto;
+	border-left: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+
+	background: url(http://mgs.home.pl/allegro/jaspis/images/bg_top.jpg) no-repeat scroll center,
+				#f1f1f1;
+	}
+	</style>-->
+</head>
+<body>
+<!-- allegro template start -->
+<style>
+/***************** GENERAL STYLES *****************/
+	* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+	html {
+	margin: 0;
+	padding: 0;
+	}
+	body {
+	margin: 0;
+	padding: 0;
+
+	font-family: arial;
+	color: #232323;
+	font-size: 16px;
+
+	text-align: center;
+	}
+	.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 56px 0 35px 0;
+
+	border-left: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+
+	background: url(http://mgs.home.pl/allegro/jaspis/images/bg_top_garden.jpg) no-repeat scroll center top
+				#f1f1f1;
+
+	text-align: center;
+	font-family: arial;	ś
+	font-size: 14px;
+	line-height: 14px;
+	color: #484848;
+	}
+
+	h1 {
+	font-family: Impact, Charcoal, "Arial Black", sans-serif;
+	font-size: 56px;
+	line-height: 63px;
+	font-weight: 300;
+	text-transform: uppercase;
+
+	color: #c00;
+
+	margin: 0;
+	}
+
+	h2 {
+	font-family: Impact, Charcoal, "Arial Black", sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	text-transform: uppercase;
+
+	color: white;
+	text-shadow: 1px  1px 2px rgba(0,0,0,0.5);
+
+	margin: 0;
+	}
+
+	h3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	font-weight: normal;
+
+	margin: 0;
+	}
+
+	a {
+	text-decoration: none;
+	color: inherit;
+	}
+
+	strong {
+		color: #666;
+	}
+
+	hr {
+	border: 0; 
+	height: 1px; 
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+	margin-top: 14px;
+	}
+/***************** TOP *****************/
+
+h1.logo {
+	width: 270px;
+	margin: 0 auto 0 auto;
+}
+h1.logo a {
+	height: 100px;
+	display: block;
+	background: url(http://mgs.home.pl/allegro/jaspis/images/logo.png) no-repeat;
+
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+
+	/*-webkit-filter: drop-shadow(5px 5px 5px #222);
+  	filter: drop-shadow(5px 5px 5px #222);*/
+
+  	-webkit-filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.5));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+.top p.small {
+	font-family: Impact, Charcoal, "Arial Black", sans-serif;
+	font-size: 28px;
+	line-height: 35px;
+	color: black;
+
+	margin: 91px auto 7px auto;
+}
+.top p.big {
+	font-family: Impact, Charcoal, "Arial Black", sans-serif;
+	font-size: 42px;
+	line-height: 49px;
+	text-transform: uppercase;
+	color: black;
+
+	margin: 21px auto 28px auto;
+}
+.shadow_2px {
+	text-shadow: 
+
+    -1px -1px 0px #fff,
+     0px -1px 0px #fff,
+     1px -1px 0px #fff,
+    -1px  0px 0px #fff,
+     1px  0px 0px #fff,
+    -1px  1px 0px #fff,
+     0px  1px 0px #fff,
+     1px  1px 0px #fff,
+
+    -2px -2px 0px #fff,
+    -1px -2px 0px #fff,
+     0px -2px 0px #fff,
+     1px -2px 0px #fff,
+     2px -2px 0px #fff,
+     2px -1px 0px #fff,
+     2px  0px 0px #fff,
+     2px  1px 0px #fff,
+     2px  2px 0px #fff,
+     1px  2px 0px #fff,
+     0px  2px 0px #fff,
+    -1px  2px 0px #fff,
+    -2px  2px 0px #fff,
+    -2px  1px 0px #fff,
+    -2px  0px 0px #fff,
+    -2px -1px 0px #fff;
+}
+
+/***************** MENU *****************/
+.menu {
+	height: 49px;
+
+	margin-bottom: 49px;
+
+	background: -webkit-linear-gradient(#cc0000, #990000); /* For Safari 5.1 to 6.0 */
+ 	   background: -moz-linear-gradient(#cc0000, #990000); /* For Firefox 3.6 to 15 */
+ 		 background: -o-linear-gradient(#cc0000, #990000); /* For Opera 11.1 to 12.0 */
+			background: linear-gradient(#cc0000, #990000); /* Standard syntax */
+
+	border-top: solid 3px white;
+	border-bottom: solid 3px white;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+}
+.menu ul li {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+.menu ul li a {
+	display: inline-block;
+	line-height: 15px;
+	padding: 14px 21px;
+
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.menu ul li a:hover {
+	background-color: #cc0000;
+}
+
+/***************** CONTENT *****************/
+
+.title {
+	height: 56px;
+	width: 1100px;
+
+	margin: 28px auto;
+	padding: 16px 0 14px 0;
+
+	background: -webkit-linear-gradient(#cc0000, #990000); /* For Safari 5.1 to 6.0 */
+ 	   background: -moz-linear-gradient(#cc0000, #990000); /* For Firefox 3.6 to 15 */
+ 		 background: -o-linear-gradient(#cc0000, #990000); /* For Opera 11.1 to 12.0 */
+			background: linear-gradient(#cc0000, #990000); /* Standard syntax */
+
+	border: solid 3px white;
+	border-radius: 6px;
+
+	clear: both;
+}
+.content {
+	min-height: 350px;
+	width: 1100px;
+
+	margin: auto;
+	padding: 35px 40px 49px 40px;
+
+	background: white;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+
+	border-radius: 6px;
+
+}
+.content.half {
+	height: 385px;
+	width: 503px;
+
+	float: left;
+
+	margin: 0 40px 28px 50px;
+	padding: 35px 40px 49px 40px;
+
+	background: white;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+
+	border-radius: 6px;
+}
+
+.content.product {
+	background: url(http://mgs.home.pl/allegro/jaspis/donica/images/product.jpg) no-repeat left center
+				white;
+
+	padding: 35px 40px 49px 590px;
+
+	text-align: left;
+}
+
+.content.product ul li {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: bold;
+
+	text-transform: uppercase;
+
+	margin: 0;
+}
+
+.navigation {
+	height: 35px;
+
+	margin-top: 28px;
+	background: transparent;
+}
+.navigation ul {
+	margin: 0;
+	padding: 0;
+}
+.navigation ul li {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+.navigation ul li a {
+	height: 35px;
+	width: 260px;
+
+	display: inline-block;
+	padding: 14px 21px;
+
+	margin-right: 7px;
+	margin-left: 7px;
+
+	font-weight: 800;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 1px  1px 2px rgba(0,0,0,0.5);
+	line-height: 7px;
+	letter-spacing: -0.03em;
+
+	background: -webkit-linear-gradient(#ffae00, #eb9500); /* For Safari 5.1 to 6.0 */
+ 	   background: -moz-linear-gradient(#ffae00, #eb9500); /* For Firefox 3.6 to 15 */
+ 		 background: -o-linear-gradient(#ffae00, #eb9500); /* For Opera 11.1 to 12.0 */
+			background: linear-gradient(#ffae00, #eb9500); /* Standard syntax */
+}
+.navigation ul li a:hover {
+	background-color: #cc0000;
+}
+.navigation ul li a img{
+	-webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+}
+.content.others {
+	height: 679px;
+
+	position: relative;
+}
+.content.others .left {
+	float: left;
+	background: url(http://mgs.home.pl/allegro/jaspis/images/bg_art_ogrodowe.jpg) -470px 0 no-repeat;
+}
+.content.others .right {
+	float: right;
+	background: url(http://mgs.home.pl/allegro/jaspis/images/bg_art_budowlane.jpg) -470px 0 no-repeat;
+}
+.content.others .left:hover {
+	background: url(http://mgs.home.pl/allegro/jaspis/images/bg_art_ogrodowe.jpg) 0 0 no-repeat;
+}
+.content.others .right:hover {
+	background: url(http://mgs.home.pl/allegro/jaspis/images/bg_art_budowlane.jpg) 0 0 no-repeat;
+}
+.content.others .left a, .content.others .right a{
+	display: block;
+
+	height: 679px;
+	width: 470px;
+
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+.content.others .left h1, .content.others .right h1 {
+	position: absolute;
+	bottom: 35px;
+}
+
+.content.contact {
+	background-color: #900;
+
+	color: white;
+	line-height: 21px;
+}
+.content.contact span{
+	color: #ffae00;
+	font-family: Impact, Charcoal, "Arial Black", sans-serif;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 21px;
+	text-transform: uppercase;
+
+	text-shadow: 1px  1px 2px rgba(0,0,0,0.5);
+}
+
+</style>
+<!--[if gte IE 8]>
+<style>
+	.top p.small {width: 300px; color: #000; background: #fff;}
+	.top p.big {width: 500px; color: #000; background: #fff;}
+	.menu {background: #c00;}
+    .title {background: #c00;}
+</style>
+<![endif]-->
+<div class="container">
+<!--################## MENU GÓRNE ##################-->
+
+	<div class="top">
+		<h1 class="logo">
+			<a href="http://allegro.pl/my_page.php?uid=36793489" title="O firmie" target="_blank">Przedsiębiorstwo Jaspis | Artykuły budowlane i ogrodowe</a>
+		</h1>
+		<p class="small shadow_2px" style="padding-left:150px;">Grębów 98<br/>63-708 Rozdrażew</p>
+		<p class="big shadow_2px" style="padding-left:150px;">Tel. 606 98 46 07<br/>E-mail: Jaspis@interia.pl</p>
+	</div><!--end .top-->
+	<div class="menu">
+		<ul>
+			<li><a href="http://allegro.pl/my_page.php?uid=36793489" title="o nas" target="_blank">O nas</a></li>
+			<li><a href="http://allegro.pl/listing/user/listing.php?us_id=36793489" title="nasze aukcje" target="_blank">Nasze aukcje</a></li>
+			<li><a href="http://allegro.pl/myaccount/favourites/favourites_sellers.php/addNew/?userId=36793489" title="dodaj nas do ulubionych" target="_blank">Dodaj nas do ulubionych</a></li>
+			<li><a href="http://allegro.pl/SendMailToUser.php?userId=36793489" title="kontakt" target="_blank">Kontakt</a></li>
+		</ul>
+	</div><!--end .menu-->
+
+<!--################## ZAWARTOŚĆ AUCKJI ##################-->
+	<div class="title">
+		<h2>oferowany produkt</h2>
+	</div><!--end .title-->
+	<div class="content product">
+		<h1 style="letter-spacing: -0.03em">Donica drewniana</h1>
+		<ul>
+			<li>Kwadratowa</li>
+			<li>Grzbiety metalowe</li>
+		</ul>
+		<h3>wymiary: 60x60x75cm</h3>
+		<p>	Bardzo solidna i duża donica - GRUBOŚĆ DREWNA 3,5cm.<br>
+			Drewno suszone i szlifowane. Konstrukcja donicy z metalu malowanego proszkowo. Atutem donicy jest to, że stoi na nogach o wys. 7cm, dzięki czemu można ją przewozić paleciakiem lub wózkiem widłowym.</p>
+		<p>	Wspaniała propozycja zaprezentowania palmy, fikusa, świerku 	i innych dużych drzewek!<br>
+			Nadaje się zarówno do ogrodu, na taras, balkon, czy też hol. Doniczkę można zastosować w domu jak i na dworze. Jest ona odporna na niekorzystne warunki atmosferyczne, promienie UV i temperaturę. Doniczka jest trzykrotnie impregnowana w celu dokładniejszego zabezpieczenia jej przed niekorzystnymi warunkami atmosferycznymi. Wnętrze zostało wyłożone agrowłókniną.</p>
+		<p>	Donica wysyłana jest w ciągu 3 dni roboczych od daty 	zaksięgowania wpłaty na naszym rachunku bankowym (przy przedpłacie) oraz od dnia zakupu (przy płatności za pobraniem).<br>
+			Donica wysyłana jest W CAŁOŚCI - zmontowana.</p>
+			<p>Kupując na naszej aukcji - kupujesz bezpośrednio u producenta.</p>
+	</div><!--end .content .product-->	
+
+	<div class="navigation">
+		<ul>
+			<li><a href="#galeria" title="Zobacz galerię zdjęć"><img src="http://mgs.home.pl/allegro/jaspis/images/arrow_down.gif" alt="#"> Galeria zdjęć</a></li>
+			<li><a href="#platnosc" title="Sprawdź opcje płatności i dostawy"><img src="http://mgs.home.pl/allegro/jaspis/images/arrow_down.gif" alt="#"> Płatność i dostawa</a></li>
+			<li><a href="#others" title="Zobacz inne nasze aukcje"><img src="http://mgs.home.pl/allegro/jaspis/images/arrow_down.gif" alt="#"> Inne aukcje</a></li>
+			<li><a href="#kontakt" Title="Skontaktuj się z nami"><img src="http://mgs.home.pl/allegro/jaspis/images/arrow_down.gif" alt="#"> Kontakt</a></li>
+		</ul>
+	</div>
+
+	<div class="title" id="galeria">
+		<h2>galeria zdjęć</h2>
+	</div><!--end .title-->
+	<div class="content gallery" >
+		<img src="http://mgs.home.pl/allegro/jaspis/donica/images/donica_01.jpg" alt="donica-drewniana" />
+		<img src="http://mgs.home.pl/allegro/jaspis/donica/images/donica_02.jpg" alt="donica-drewniana" />
+		<img src="http://mgs.home.pl/allegro/jaspis/donica/images/donica_03.jpg" alt="donica-drewniana" />
+		<img src="http://mgs.home.pl/allegro/jaspis/donica/images/donica_04.jpg" alt="donica-drewniana" />
+		<img src="http://mgs.home.pl/allegro/jaspis/donica/images/donica_05.jpg" alt="donica-drewniana" />
+		<img src="http://mgs.home.pl/allegro/jaspis/donica/images/donica_06.jpg" alt="donica-drewniana" />
+		<img src="http://mgs.home.pl/allegro/jaspis/donica/images/donica_07.jpg" alt="donica-drewniana" />s
+	</div><!--end .content .gallery-->	
+
+	<div class="title" id="platnosc">
+		<h2>Płatności i dostawa</h2>
+	</div><!--end .title-->
+	<div class="content half">
+		<h3>Opcje płatności</h3>
+		<hr>
+		<p><b>1. Płatność przelewem</b><br>
+		Przedpłata na tradycyjne konto bankowe sklepu internetowego Jaspis</p>
+		<p>Dane do przelewu:</p>
+		<p>Przedsiębiorstwo Jaspis<br>
+		Izabella Jańczak-Czajka <br>
+		Grębów 98 <br>
+		63-708 Rozdrażew</p>
+		<p><strong>BANK SPÓŁDZIELCZY: <br>
+		38 8427 0009 0112 9890 2000 0001</strong></p>
+
+		<p><b>2. Pay U</b><br>
+		Przedpłata  w systemie natychmiastowych płatności Allegro</p>
+
+		<p><b>3. Pobranie</b><br>
+		Płatność kurierowi gotówką przy odbiorze towaru</p>
+	</div><!--end .half .pay-->	
+	<div class="content half">
+		<h3>Opcje dostawy</h3>
+		<hr>
+		<p><b>1. Przesyłka kurierska</b><br>
+		Przesyłka dostarczana przez firmę DHL <br>
+		Czas dostawy 24-48h</p>
+		<a href="http://www.dhl.com.pl/pl/express/sprawdz_przesylke.html" alt="sprawdź status przesyłki" target="_blank"><img src="http://mgs.home.pl/allegro/jaspis/images/logo_dhl.jpg" alt="DHL" height="63px">
+		<p><strong>SPRAWDŹ STATUS PRZESYŁKI</strong></p></a>
+
+		<p><b>2. Paczka pocztowa</b><br>
+		Przesyłka dostarczana przez Pocztę Polską <br>
+		Czas dostawy 24-48h</p>
+
+		<p><b>3. Paczkomaty InPost</b><br>
+		Czas dostawy do 24h</p>
+	</div><!--end .half .pay-->	
+	<div class="title" id="others">
+		<h2>Zobacz inne nasze aukcje</h2>
+	</div><!--end .title-->
+	<div class="content others">
+		<div class="left">
+			<a href="http://allegro.pl/listing/user/listing.php?us_id=36793489" title="Artykuły ogrodowe" alt="Artykuły ogrodowe" target="_blank">ARTYKUŁY OGRODOWE</a>
+			<h1>Art. Ogrodowe</h1>
+		</div>
+		<div class="right">
+			<a href="http://allegro.pl/listing/user/listing.php?us_id=36793489" title="Artykuły budowlane" alt="Artykuły budowlane" target="_blank">ARTYKUŁY BUDOWLANE</a>
+			<h1>Art. Budowlane</h1>
+		</div>
+	</div><!--end .content .others-->
+
+	<div class="title" id="kontakt">
+		<h2>Kontakt</h2>
+	</div><!--end .title-->
+	<div class="content contact">
+		<h1 class="logo">
+			<a href="http://allegro.pl/my_page.php?uid=36793489" alt="O firmie" target="_blank">Przedsiębiorstwo Jaspis | Artykuły budowlane i ogrodowe</a>
+		</h1>
+		<p>JESTEŚMY DO PAŃSTWA DYSPOZYCJI<br>
+		OD PONIEDZIAŁKU DO PIĄTKU<br>
+		OD 8:00 do 18:00</p>
+		<p><span>Zapraszamy do kontaktu</span></p>
+		<h2>E-mail: Jaspis@interia.pl<br><br>
+		tel. 606 98 46 07</h2>
+		
+	</div><!--end .content .contact-->	
+
+</div><!--end .container-->
+</div>
+<!-- allegro template end -->
+</body>
+</html>
